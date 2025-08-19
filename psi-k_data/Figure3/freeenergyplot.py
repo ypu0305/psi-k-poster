@@ -13,18 +13,18 @@ from ase.io import read, write
 from ase import Atoms
 from ase.neighborlist import neighbor_list
 structure = 'AA08'
-filename_H = '/home/ypu/Documents/github/psi-k-poster/psi-k_data/Figure3/data/traj/AA08/2Dhistogram_'+structure+'.txt'
+filename_H = '/home/ypu/Documents/github/psi-k-poster/psi-k_data/Figure3/data/traj/2Dhistogram_'+structure+'.txt'
 H =  np.loadtxt(filename_H)
-filename_xedges = '/home/ypu/Documents/github/psi-k-poster/psi-k_data/Figure3/data/traj/AA08/x_edges.txt'
-filename_yedges = '/home/ypu/Documents/github/psi-k-poster/psi-k_data/Figure3/data/traj/AA08/y_edges.txt'
+filename_xedges = '/home/ypu/Documents/github/psi-k-poster/psi-k_data/Figure3/data/traj/x_edges_'+structure+'.txt'
+filename_yedges = '/home/ypu/Documents/github/psi-k-poster/psi-k_data/Figure3/data/traj/y_edges_'+structure+'.txt'
 x_edges = np.loadtxt(filename_xedges)
 y_edges = np.loadtxt(filename_yedges)
-filename_carbon_up='/home/ypu/Documents/github/psi-k-poster/psi-k_data/Figure3/data/traj/AA08/carbon_position_up_AA08.txt'
-filename_carbon_down='/home/ypu/Documents/github/psi-k-poster/psi-k_data/Figure3/data/traj/AA08/carbon_position_down_AA08.txt'
+filename_carbon_up='/home/ypu/Documents/github/psi-k-poster/psi-k_data/Figure3/data/traj/carbon_position_up_'+structure+'.txt'
+filename_carbon_down='/home/ypu/Documents/github/psi-k-poster/psi-k_data/Figure3/data/traj/AA08/carbon_position_down_'+structure+'.txt'
 carbon_positions_up = np.loadtxt(filename_carbon_up)
 carbon_positions_down = np.loadtxt(filename_carbon_down)
-filename_bond_up='/home/ypu/Documents/github/psi-k-poster/psi-k_data/Figure3/data/traj/AA08/bond_list_up_AA08.txt'
-filename_bond_down='/home/ypu/Documents/github/psi-k-poster/psi-k_data/Figure3/data/traj/AA08/bond_list_down_AA08.txt'
+filename_bond_up='/home/ypu/Documents/github/psi-k-poster/psi-k_data/Figure3/data/traj/AA08/bond_list_up_'+structure+'.txt'
+filename_bond_down='/home/ypu/Documents/github/psi-k-poster/psi-k_data/Figure3/data/traj/AA08/bond_list_down_'+structure+'.txt'
 bond_up=np.loadtxt(filename_bond_up)
 bond_down=np.loadtxt(filename_bond_down)
 i_list_up=bond_up[:,0].astype(int)
