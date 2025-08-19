@@ -1,0 +1,4 @@
+x_value 8.5 Å
+y_value 9.5 Å
+bin 30
+temperature 600 K
